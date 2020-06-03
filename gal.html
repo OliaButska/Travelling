@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="css/gal.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <style>
+    .bg-dark{
+      background: rgb(29, 29, 29);
+    }
+
+    .container-gal{
+      max-width: 610px;
+      width: 100%;
+      margin: 10px auto;
+      position: relative;
+    }
+
+    .gallery a{
+        max-width: 600px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .gallery img{
+        height: 100%;
+        max-width: 600px;
+        width: 100%;
+    }
+    
+    .gal-prev, .gal-next{
+        color: #ffffff;
+        font-size: 30px;
+        position: absolute;
+        top: 210px;
+        z-index: 6;
+    }
+
+    .gal-prev{
+        left: -20%;
+    }
+
+    .gal-next{
+        right: -20%;
+    }
+  </style>
+ <body>
+  <section class="bg-dark">
+    <div class="container-gal">
+        <div class="gal-prev">Previous</div>
+    <div class="gallery">
+        <a href="#"><img src="image/australia1.jpg"></a>
+        <a href="#"><img src="image/australia2.jpg"></a>
+        <a href="#"><img src="image/greece2.jpg"></a>
+        <a href="#"><img src="image/greece3.jpg"></a>
+        <a href="#"><img src="image/maldives1.jpg"></a>
+        <a href="#"><img src="image/maldives2.jpg"></a>
+        <!-- <a href="#"><img src="image/montenegro3.jpg"></a> -->
+        <a href="#"><img src="image/montenegro1.jpg"></a>
+        <!-- <a href="#"><img src="image/norway3.jpg"></a> -->
+        <a href="#"><img src="image/norway1.jpg"></a>
+        <a href="#"><img src="image/srilanka2.jpg"></a>
+        <!-- <a href="#"><img src="image/srilanka1.jpg"></a> -->
+      </div>
+      <div class="gal-next">Next</div>
+    </div>
+    </section>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/gal.js"></script>
+<script>
+  $('.gallery').flipping_gallery({
+    //autoplay: true,
+  })
+</script>
+</body>
+</html>
