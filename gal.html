@@ -1,74 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href="css/gal.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <style>
-    .bg-dark{
-      background: rgb(29, 29, 29);
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel = "stylesheet" href="css/gal.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
 
-    .container-gal{
-      max-width: 610px;
-      width: 100%;
-      margin: 10px auto;
-      position: relative;
-    }
 
-    .gallery a{
-        max-width: 600px;
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-    }
+</style>
+<body class="bg-dark"> 
+ <nav class="sticky-nav navbar navbar-expand-lg bgr-light navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    .gallery img{
-        height: 100%;
-        max-width: 600px;
-        width: 100%;
-    }
-    
-    .gal-prev, .gal-next{
-        color: #ffffff;
-        font-size: 30px;
-        position: absolute;
-        top: 210px;
-        z-index: 6;
-    }
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
 
-    .gal-prev{
-        left: -20%;
-    }
-
-    .gal-next{
-        right: -20%;
-    }
-  </style>
- <body>
-  <section class="bg-dark">
-    <div class="container-gal">
-        <div class="gal-prev">Previous</div>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="best_places.html">Лучшие места в странах</a>
+      </li>
+    </ul>
+  </div>
+</nav>  
+<section>
+  <div class="container-gal">
+    <!-- <div class="gal-prev">Previous</div> -->
     <div class="gallery">
-        <a href="#"><img src="image/australia1.jpg"></a>
-        <a href="#"><img src="image/australia2.jpg"></a>
-        <a href="#"><img src="image/greece2.jpg"></a>
-        <a href="#"><img src="image/greece3.jpg"></a>
-        <a href="#"><img src="image/maldives1.jpg"></a>
-        <a href="#"><img src="image/maldives2.jpg"></a>
-        <!-- <a href="#"><img src="image/montenegro3.jpg"></a> -->
-        <a href="#"><img src="image/montenegro1.jpg"></a>
-        <!-- <a href="#"><img src="image/norway3.jpg"></a> -->
-        <a href="#"><img src="image/norway1.jpg"></a>
-        <a href="#"><img src="image/srilanka2.jpg"></a>
-        <!-- <a href="#"><img src="image/srilanka1.jpg"></a> -->
-      </div>
-      <div class="gal-next">Next</div>
+      <a href="#"><img class="special_size" src="image/australia1.jpg"></a>
+      <a href="#"><img src="image/australia2.jpg"></a>
+      <a href="#"><img src="image/greece2.jpg"></a>
+      <a href="#"><img src="image/greece3.jpg"></a>
+      <a href="#"><img src="image/maldives1.jpg"></a>
+      <a href="#"><img src="image/maldives2.jpg"></a>
+      <!-- <a href="#"><img src="image/montenegro3.jpg"></a> -->
+      <a href="#"><img src="image/montenegro1.jpg"></a>
+      <!-- <a href="#"><img src="image/norway3.jpg"></a> -->
+      <a href="#"><img src="image/norway1.jpg"></a>
+      <a href="#"><img src="image/srilanka2.jpg"></a>
+      <!-- <a href="#"><img src="image/srilanka1.jpg"></a> -->
     </div>
-    </section>
+    <!-- <div class="gal-next">Next</div> -->
+  </div>
+</section>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/gal.js"></script>
 <script>
@@ -76,5 +57,8 @@
     //autoplay: true,
   })
 </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
+
 </body>
 </html>
