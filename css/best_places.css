@@ -1,0 +1,90 @@
+.hidden{
+	display: none;
+}
+
+.bgr-light{
+    background-color:  #e0d6b6;
+}
+
+a{
+    color: #b1a47a;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #a2925c;
+    transition: 0.5s;
+}
+.country-list-box{
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+
+}
+.country-list-box li{
+    list-style-type: none;
+    margin: 12px;
+}
+.country-list-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px ;
+}
+.country-list{
+    background: #eee;
+}
+section.country-list{
+    min-height: 100%;
+}
+.list-i{
+    margin-right: 10px;
+    color: #00c2c8;
+}
+section{
+    padding: 30px 10px;
+    min-height: 300px;
+    height: 100%;
+    position: relative;
+}
+.navbar-nav{
+    margin: 0 auto;
+    font-size: 25px;
+}
+.margin_center{
+    margin: 0 auto;
+    max-width: 1400px;
+    word-wrap: break-word;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.location{
+    font-weight: 600;
+    color: rgb(0, 134, 134);
+    margin-bottom: 10px;
+}
+
+.description{
+    
+}
+
+.place{
+    padding: 10px;
+}
+
+.custom_card{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+}
+@media(max-width: 500px){
+    .country-list-box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
